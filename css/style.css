@@ -3,6 +3,10 @@ body {
     background-color: #f9f9f9;
 }
 
+:root {
+    --bg-color: #f9f9f9;
+    --dark-green: #06484a;
+}
 
 .navbar a {
     color: #f9f9f9 !important;
@@ -38,15 +42,83 @@ span:after {
     background-color: white;
     transform-origin: bottom left;
     transition: transform 0.25s ease-out
-
 }
 
 span:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    
+
 }
 
 .invertImage {
     transform: scaleX(-1);
+}
+
+
+.text-green {
+    color: #06484a !important;
+}
+
+.text-green::after {
+    width: 0%;
+}
+
+.container-100vh {
+    height: 100vh;
+}
+
+.container-bg-img {
+    background-image: url(../images/Rectangle\ 4.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 0%;
+}
+
+.container-bg-img-alt {
+    background-image: url(../images/Rectangle\ 5.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 100%;
+}
+
+.bg-dark-green {
+    background-color: var(--dark-green);
+}
+
+@media (min-width: 1080px) {
+    .container-midle {
+        background: linear-gradient(to right,
+                #f9f9f9 0%,
+                #f9f9f9 50%,
+                #06484a 50%,
+                #06484a 100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .container-100vh {
+        height: 100%;
+    }
+
+    .container-bg-img {
+        background-size: 70%;
+    }
+
+    #background {
+        background: var(--dark-green) !important;
+
+    }
+
+    .nav-link {
+        color: var(--dark-green) !important;
+    }
+
+    .container-bg-img {
+        background-size: 60%;
+    }
+
+    .container-bg-img-alt {
+        background-size: 60%;
+    }
+
 }
