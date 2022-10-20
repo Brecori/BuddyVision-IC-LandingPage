@@ -1,0 +1,52 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+}
+
+
+.navbar a {
+    color: #f9f9f9 !important;
+}
+
+#background {
+    width: 100%;
+    background: linear-gradient(to right,
+            #f9f9f9 0%,
+            #f9f9f9 50%,
+            #06484a 50%,
+            #06484a 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    display: inline-block;
+    position: relative;
+    color: white;
+    padding-bottom: 2px;
+}
+
+span:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out
+
+}
+
+span:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+}
+
+.invertImage {
+    transform: scaleX(-1);
+}
