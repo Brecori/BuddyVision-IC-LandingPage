@@ -156,5 +156,10 @@ span:hover:after {
     .carousel-control-prev-icon {
         width: 2rem !important;
     }
+    .carousel-indicators [data-bs-target] {
+    height: 8px;
+    width: 8px;
+    
+}
 
 }
