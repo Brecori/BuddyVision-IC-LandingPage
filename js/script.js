@@ -8,6 +8,8 @@ let socorro = document.getElementById('socorro');
 let iot = document.getElementById('iot');
 let cyborg = document.getElementById('cyborg');
 let fiap = document.getElementById('fiap');
+let logo = document.getElementById('logo');
+let logoWhite = document.getElementById('logo-white');
 
 if (window.matchMedia ('(max-width:768px)').matches) {
     imgCorona.classList.add('py-5');
@@ -30,7 +32,10 @@ if (window.matchMedia ('(max-width:768px)').matches) {
     cyborg.classList.add('py-5');
 
     fiap.classList.remove('h-50');
-    fiap.classList.remove('h-75');
+    fiap.classList.add('h-75');
+
+    logo.classList.add('d-none');    
+    logoWhite.classList.remove('d-none');    
 }
 
 

@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f9f9f9;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -91,6 +92,10 @@ span:hover:after {
     border-radius: 100%;
     /* add border-radius */
     background-color: var(--dark-green);
+}
+
+.w-60 {
+    width: 60%;
 }
 
 .carousel-control-prev-icon {
