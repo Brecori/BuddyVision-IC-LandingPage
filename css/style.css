@@ -119,6 +119,56 @@ span:hover:after {
     width: 0;
 }
 
+.up-button {
+    position: fixed;
+    right: -50rem;
+    bottom: 3rem;
+    border: none;
+    padding: 15px;
+    background-color: #f9f9f94b;
+    transition: .5s;
+    z-index: 99;
+    border-radius: 100%;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.up-button-sm {
+    position: fixed;
+    right: 0rem;
+    bottom: 0rem;
+    border: none;
+    padding: 15px;
+    background-color: #f9f9f94b;
+    transition: .5s;
+    z-index: 99;
+    border-radius: 100%;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.right-1 {
+    right: 3rem;
+    transition: .5s;
+}
+
+.icon{
+  color: var(--dark-green);
+  font-size: 2.5rem;
+  transition: .3s;
+  
+  
+}
+
+.icon:hover {
+    color: #3dbabe;
+    text-shadow: #3dbabe 0px 0px 6px;
+}
+
+a img .img-format{
+    width: 60%;
+}
+
 @media (min-width: 1080px) {
     .container-midle {
         background: linear-gradient(to right,
@@ -162,9 +212,16 @@ span:hover:after {
         width: 2rem !important;
     }
     .carousel-indicators [data-bs-target] {
-    height: 8px;
-    width: 8px;
-    
-}
+        height: 8px;
+        width: 8px;
+    }
+
+    a img .img-format{
+        width: 100%;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
 
 }
